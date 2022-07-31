@@ -52,17 +52,10 @@ const generateProjects=projectsArr => {
                 })
                 .join('')}
             </div?
-        `;
-    };
-    
-
-        ${featuredProjectHtmlArr.join('')}
-        ${nonFeaturedProjectsHtmlArr.join('')}
-        </div>
-    </section>
+        </section>
     `;
 };
-
+    
 module.exports=templateData => {
     //destructure projects and about data from templateData based on their property key names
     const {projects, about,...header} =templateData;
